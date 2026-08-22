@@ -83,6 +83,28 @@ function getExerciseState(sessionKey) {
   });
 }
 
+function renderProgramSuggestions(sessionKey) {
+  const mood = getSessionMood();
+  const exercises = getExerciseState(sessionKey);
+
+  exercises.forEach((exercise) => {
+    const programCard = document.querySelector(`.exercise[data-exercise-id="${exercise.id}"]`);
+    if (!programCard) return;
+
+    const value = calculateNextWeight(exercise, mood);
+    const text = `Poids conseillé : ${value.toFixed(1).replace('.0', '')} kg`;
+
+    let suggestion = programCard.querySelector('.program-suggestion');
+    if (!suggestion) {
+      suggestion = document.createElement('div');
+      suggestion.className = 'program-suggestion';
+      programCard.appendChild(suggestion);
+    }
+
+    suggestion.textContent = text;
+  });
+}
+
 function renderSessionSettings(sessionKey) {
   const session = SESSION_DATA[sessionKey];
   if (!session) return;
@@ -117,6 +139,8 @@ function renderSessionSettings(sessionKey) {
           : 'Tu es dans une forme normale : on conserve ou on consolide.';
     }
   });
+
+  renderProgramSuggestions(sessionKey);
 }
 
 function updateStoredExerciseValues(sessionKey) {
@@ -191,6 +215,7 @@ function validateSession(sessionKey) {
 
   localStorage.setItem(SESSION_KEY, JSON.stringify(snapshot));
   renderLastSessionSummary();
+  renderProgramSuggestions(sessionKey);
 }
 
 function initializeSessionPage() {
