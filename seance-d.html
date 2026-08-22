@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jambes B</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-session="d">
+  <div class="container">
+    <div class="topbar">
+      <a class="back-link" href="index.html">← Accueil</a>
+      <div></div>
+    </div>
+
+    <header class="page-header">
+      <h1>🟣 Jambes B</h1>
+      <p class="subtitle">Fessiers, équilibre et stabilité pour compléter la semaine.</p>
+    </header>
+
+    <section>
+      <h2>📋 Objectif de la séance</h2>
+      <div class="session-meta">
+        <div class="meta-card"><strong>5</strong><span>Exercices</span></div>
+        <div class="meta-card"><strong>3–4</strong><span>Sets</span></div>
+        <div class="meta-card"><strong>10–20</strong><span>Répétitions</span></div>
+      </div>
+      <div class="success-box">Le travail est orienté sur les fessiers et les stabilisateurs du bassin. Contrôle la descente et le maintien du tronc.</div>
+    </section>
+
+    <section id="parametrage">
+      <h2>⚙️ Paramétrage</h2>
+      <div class="mood-selector">
+        <strong>Ma forme :</strong>
+        <label><input type="radio" name="sessionMood" value="1">Très fatigué</label>
+        <label><input type="radio" name="sessionMood" value="2">Normal</label>
+        <label><input type="radio" name="sessionMood" value="3">Pleine forme</label>
+      </div>
+
+      <div class="exercise-list">
+        <div class="perf-row" data-session="d" data-exercise-id="bulgarian">
+          <div class="perf-name">Squat bulgare</div>
+          <div class="perf-fields">
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="18" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">18 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="d" data-exercise-id="hip_thrust">
+          <div class="perf-name">Hip thrust avec haltère</div>
+          <div class="perf-fields">
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="30" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">30 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="d" data-exercise-id="split_back">
+          <div class="perf-name">Fentes arrière avec haltères</div>
+          <div class="perf-fields">
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="18" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">18 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="d" data-exercise-id="calf_seated">
+          <div class="perf-name">Mollets assis ou debout</div>
+          <div class="perf-fields">
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="15" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">15 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="d" data-exercise-id="side_plank">
+          <div class="perf-name">Gainage latéral</div>
+          <div class="perf-fields">
+            <label><span>Temps (secondes)</span><input type="number" min="0" step="5" value="0" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Objectif :</strong> <span class="suggestion-value">30s/côté</span></div>
+          <div class="small-note"></div>
+        </div>
+      </div>
+
+      <div class="actions" style="margin-top: 18px;">
+        <button class="primary-btn" type="button" data-save-session>Valider ma séance</button>
+      </div>
+      <div id="sessionSummary" class="session-summary">Aucune séance validée pour le moment.</div>
+    </section>
+
+    <section>
+      <h2>🏋️ Séance détaillée</h2>
+      <div class="exercise-list">
+        <div class="exercise" data-session="d" data-exercise-id="bulgarian">
+          <h3>1. Squat bulgare</h3>
+          <div class="sets">3 × 10–12 par jambe</div>
+          <div class="tip">Un squat profond avec le pied arrière surélevé pour renforcer les fessiers et la mobilité.</div>
+          <div class="program-suggestion">Poids conseillé : 18 kg</div>
+        </div>
+
+        <div class="exercise" data-session="d" data-exercise-id="hip_thrust">
+          <h3>2. Hip thrust avec haltère</h3>
+          <div class="sets">4 × 10–12</div>
+          <div class="tip">Exercice très ciblé sur les fessiers, idéal pour la puissance et la stabilité du bassin.</div>
+          <div class="program-suggestion">Poids conseillé : 30 kg</div>
+        </div>
+
+        <div class="exercise" data-session="d" data-exercise-id="split_back">
+          <h3>3. Fentes arrière avec haltères</h3>
+          <div class="sets">3 × 10–12 par jambe</div>
+          <div class="tip">Concentrez-vous sur la descente lente pour sentir les quadriceps et les fessiers.</div>
+          <div class="program-suggestion">Poids conseillé : 18 kg</div>
+        </div>
+
+        <div class="exercise" data-session="d" data-exercise-id="calf_seated">
+          <h3>4. Mollets assis ou debout</h3>
+          <div class="sets">4 × 15–20</div>
+          <div class="tip">Répète le travail des mollets pour maintenir la force de propulsion pendant les mouvements de squat.</div>
+          <div class="program-suggestion">Poids conseillé : 15 kg</div>
+        </div>
+
+        <div class="exercise" data-session="d" data-exercise-id="side_plank">
+          <h3>5. Gainage latéral</h3>
+          <div class="sets">3 × 30s par côté</div>
+          <div class="tip">Renforce les obliques et aide la stabilité de la ceinture abdominale pendant les charges.</div>
+          <div class="program-suggestion">Objectif : 30s/côté</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

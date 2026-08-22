@@ -3,70 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon programme de musculation</title>
+  <title>Mon nouveau programme de musculation</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <header class="page-header">
-      <h1>💪 Mon programme de musculation</h1>
-      <p class="subtitle">3 séances par semaine — force, masse et régularité.</p>
+      <h1>💪 Mon nouveau programme</h1>
+      <p class="subtitle">Haut du corps 3x/semaine en salle + jambes 2x/semaine à la maison.</p>
     </header>
 
     <section>
-      <h2>📚 Sommaire</h2>
-      <div class="grid-3">
-        <article class="session-card" data-session="a">
-          <span class="tag">Séance A</span>
-          <h3>Pectoraux + Triceps</h3>
-          <p>Travail de la poitrine et des triceps avec mouvement de base et volume contrôlé.</p>
+      <h2>📌 Rotation des séances</h2>
+      <div class="summary-grid">
+        <div class="summary-card accent-green">
+          <strong>Haut A</strong>
+          <span>Push focus</span>
+        </div>
+        <div class="summary-card accent-blue">
+          <strong>Jambes A</strong>
+          <span>Force + stabilité</span>
+        </div>
+        <div class="summary-card accent-gold">
+          <strong>Haut B</strong>
+          <span>Pull focus</span>
+        </div>
+        <div class="summary-card accent-purple">
+          <strong>Jambes B</strong>
+          <span>Fessiers + équilibre</span>
+        </div>
+      </div>
+      <div class="info-box">
+        Rotation : A / B / A puis B / A / B la semaine suivante. Les séances H1/H2 de la semaine peuvent être alternées selon ton emploi du temps, mais garde la logique de rotation.
+      </div>
+    </section>
+
+    <section>
+      <h2>🏋️ Haut du corps (3x/semaine en salle)</h2>
+      <div class="program-grid">
+        <article class="plan-card">
+          <span class="tag tag-green">Haut A</span>
+          <h3>Push focus</h3>
+          <ul class="exercise-list-index">
+            <li>
+              <div class="exercise-head"><strong>Développé couché machine</strong><span>4×8–10</span></div>
+              <p>Le mouvement principal pour la poitrine. Descends en contrôlant, puis pousse sans arrondir le dos.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Développé épaules machine</strong><span>3×8–10</span></div>
+              <p>Travaille la partie antérieure des épaules avec un angle guidé et une charge stable.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Écarté poulie/machine</strong><span>3×12–15</span></div>
+              <p>Ouvre la poitrine et met le muscle sous tension sur un bon amplitude sans forcer le cou.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Élévations latérales</strong><span>3×12–15</span></div>
+              <p>Isolent les deltoïdes latéraux et donnent de la largeur aux épaules avec un mouvement fluide.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Extension triceps poulie</strong><span>3×12–15</span></div>
+              <p>Finit le travail des triceps avec tension constante sur la phase excentrique.</p>
+            </li>
+          </ul>
           <div class="actions">
-            <a class="button secondary" href="seance-a.html#parametrage">Paramétrer</a>
-            <a class="button primary" href="seance-a.html">Accéder</a>
+            <a class="button primary" href="seance-a.html">Voir la séance A</a>
           </div>
         </article>
 
-        <article class="session-card" data-session="b">
-          <span class="tag">Séance B</span>
-          <h3>Jambes</h3>
-          <p>Priorité au squat et à l’ensemble des muscles des jambes pour gagner en force.</p>
+        <article class="plan-card">
+          <span class="tag tag-gold">Haut B</span>
+          <h3>Pull focus</h3>
+          <ul class="exercise-list-index">
+            <li>
+              <div class="exercise-head"><strong>Tirage vertical (lat pulldown)</strong><span>4×8–10</span></div>
+              <p>Exercice phare pour le dos. Gardez la poitrine ouverte et ramenez le menton vers la barre.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Rowing horizontal (seated row)</strong><span>4×8–10</span></div>
+              <p>Travaille la largeur du dos et aide à rester en bonne posture au-dessus de la charge.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Tirage poitrine machine</strong><span>3×10–12</span></div>
+              <p>Outil idéal pour cibler les épaules postérieures et les trapèzes sans trop compenser.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Curl biceps machine</strong><span>3×10–12</span></div>
+              <p>Charge les biceps dans un mouvement guidé, avec peu de compensation au niveau du dos.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Curl marteau poulie</strong><span>3×12–15</span></div>
+              <p>Prise neutre qui travaille les biceps et le brachial pour un développement plus complet.</p>
+            </li>
+          </ul>
           <div class="actions">
-            <a class="button secondary" href="seance-b.html#parametrage">Paramétrer</a>
-            <a class="button primary" href="seance-b.html">Accéder</a>
-          </div>
-        </article>
-
-        <article class="session-card" data-session="c">
-          <span class="tag">Séance C</span>
-          <h3>Dos + Épaules + Biceps</h3>
-          <p>Un travail complet du haut du corps pour développer puissance et posture.</p>
-          <div class="actions">
-            <a class="button secondary" href="seance-c.html#parametrage">Paramétrer</a>
-            <a class="button primary" href="seance-c.html">Accéder</a>
+            <a class="button primary" href="seance-c.html">Voir la séance B</a>
           </div>
         </article>
       </div>
     </section>
 
     <section>
-      <h2>🗓️ Organisation</h2>
-      <div class="session-meta">
-        <div class="meta-card"><strong>Lundi</strong><span>Séance A</span></div>
-        <div class="meta-card"><strong>Mercredi</strong><span>Séance B</span></div>
-        <div class="meta-card"><strong>Vendredi</strong><span>Séance C</span></div>
+      <h2>🦵 Jambes (2x/semaine à la maison)</h2>
+      <div class="program-grid two-columns">
+        <article class="plan-card">
+          <span class="tag tag-blue">Jambes A</span>
+          <h3>Force + stabilité</h3>
+          <ul class="exercise-list-index">
+            <li>
+              <div class="exercise-head"><strong>Goblet squat</strong><span>4×10–12</span></div>
+              <p>Haltere tenue contre la poitrine pour garder le tronc aligné et maîtriser la descente.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Fentes avant avec haltères</strong><span>3×10–12/jambe</span></div>
+              <p>Travaille les quadriceps et le bilan musculaire, tout en renforçant l’équilibre.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>RDL haltères</strong><span>3×10–12</span></div>
+              <p>Excellente action sur les fessiers et les ischio-jambiers avec un mouvement en hinge.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Mollets debout (unijambiste)</strong><span>4×15–20</span></div>
+              <p>Charge les mollets et améliore le contrôle sur un pied, très utile pour la stabilité.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Gainage (planche)</strong><span>3×30–45s</span></div>
+              <p>Stabilise le tronc et aide à la posture durant les autres mouvements.</p>
+            </li>
+          </ul>
+          <div class="actions">
+            <a class="button primary" href="seance-b.html">Voir la séance Jambes A</a>
+          </div>
+        </article>
+
+        <article class="plan-card">
+          <span class="tag tag-purple">Jambes B</span>
+          <h3>Fessiers + équilibre</h3>
+          <ul class="exercise-list-index">
+            <li>
+              <div class="exercise-head"><strong>Squat bulgare</strong><span>3×10–12/jambe</span></div>
+              <p>Un squat profond avec le pied arrière surélevé pour renforcer les fessiers et la mobilité.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Hip thrust avec haltère</strong><span>4×10–12</span></div>
+              <p>Exercice très ciblé sur les fessiers, idéal pour la puissance et la stabilité du bassin.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Fentes arrière avec haltères</strong><span>3×10–12/jambe</span></div>
+              <p>Concentrez-vous sur la descente lente pour sentir les quadriceps et les fessiers.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Mollets assis ou debout</strong><span>4×15–20</span></div>
+              <p>Répète le travail des mollets afin de maintenir la force de propulsion pendant les mouvements de squat.</p>
+            </li>
+            <li>
+              <div class="exercise-head"><strong>Gainage latéral</strong><span>3×30s/côté</span></div>
+              <p>Renforce les obliques et aide la stabilité de la ceinture abdominale pendant les charges.</p>
+            </li>
+          </ul>
+          <div class="actions">
+            <a class="button primary" href="seance-d.html">Voir la séance Jambes B</a>
+          </div>
+        </article>
       </div>
-      <div class="info-box">Garde au moins une journée de récupération entre chaque séance pour optimiser la progression et limiter le risque de fatigue excessive.</div>
     </section>
 
     <section>
-      <h2>🎯 Objectif global</h2>
-      <ul>
-        <li>Progression sur les mouvements de base</li>
-        <li>Respect de la récupération</li>
-        <li>Séances régulières et bien planifiées</li>
-        <li>Adaptation de la charge selon la forme du jour</li>
-      </ul>
-      <div class="success-box">Le but n’est pas de forcer à chaque séance, mais de garder une progression stable et durable sur le long terme.</div>
+      <h2>🗓️ Exemple de répartition sur la semaine</h2>
+      <div class="week-grid">
+        <div class="day-card"><strong>Lundi</strong><span>Haut A (salle)</span></div>
+        <div class="day-card"><strong>Mardi</strong><span>Jambes A (maison)</span></div>
+        <div class="day-card"><strong>Mercredi</strong><span>Repos ou léger</span></div>
+        <div class="day-card"><strong>Jeudi</strong><span>Haut B (salle)</span></div>
+        <div class="day-card"><strong>Vendredi</strong><span>Jambes B (maison)</span></div>
+        <div class="day-card"><strong>Samedi</strong><span>Haut A ou B (salle)</span></div>
+        <div class="day-card"><strong>Dimanche</strong><span>Repos</span></div>
+      </div>
+      <div class="success-box">Le but reste simple : aller chercher le travail, respecter le repos et faire progresser la charge ou le nombre de répétitions de manière intelligente.</div>
     </section>
 
     <footer>Mon programme — version 2026</footer>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Séance A — Pectoraux + Triceps</title>
+  <title>Haut A — Push focus</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-session="a">
@@ -14,18 +14,18 @@
     </div>
 
     <header class="page-header">
-      <h1>🟢 Séance A — Pectoraux + Triceps</h1>
-      <p class="subtitle">Force, volume et contrôle technique sur les mouvements de base.</p>
+      <h1>🟢 Haut A — Push focus</h1>
+      <p class="subtitle">Travail prioritaire sur la poitrine, les épaules et les triceps.</p>
     </header>
 
     <section>
       <h2>📋 Objectif de la séance</h2>
       <div class="session-meta">
-        <div class="meta-card"><strong>4</strong><span>Exercices principaux</span></div>
-        <div class="meta-card"><strong>3–4</strong><span>Sets par mouvement</span></div>
-        <div class="meta-card"><strong>6–12</strong><span>Répétitions ciblées</span></div>
+        <div class="meta-card"><strong>5</strong><span>Exercices</span></div>
+        <div class="meta-card"><strong>3–4</strong><span>Sets</span></div>
+        <div class="meta-card"><strong>8–15</strong><span>Répétitions</span></div>
       </div>
-      <div class="info-box">Priorité à la qualité du mouvement et au maintien de la technique. Tu peux augmenter la charge seulement si le geste reste propre.</div>
+      <div class="info-box">Garde le dos bien appuyé et travaille avec un contrôle strict sur la descente pour sécuriser les épaules.</div>
     </section>
 
     <section id="parametrage">
@@ -39,62 +39,47 @@
 
       <div class="exercise-list">
         <div class="perf-row" data-session="a" data-exercise-id="bench">
-          <div class="perf-name">Développé couché</div>
+          <div class="perf-name">Développé couché machine</div>
           <div class="perf-fields">
-            <label>
-              <span>Meilleur poids</span>
-              <input type="number" min="0" step="2.5" value="75" data-field="best" />
-            </label>
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="75" data-field="best" /></label>
           </div>
           <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">75 kg</span></div>
           <div class="small-note"></div>
         </div>
 
-        <div class="perf-row" data-session="a" data-exercise-id="incline">
-          <div class="perf-name">Presse inclinée aux haltères</div>
+        <div class="perf-row" data-session="a" data-exercise-id="shoulders">
+          <div class="perf-name">Développé épaules machine</div>
           <div class="perf-fields">
-            <label>
-              <span>Meilleur poids</span>
-              <input type="number" min="0" step="2.5" value="50" data-field="best" />
-            </label>
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="40" data-field="best" /></label>
           </div>
-          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">50 kg</span></div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">40 kg</span></div>
           <div class="small-note"></div>
         </div>
 
-        <div class="perf-row" data-session="a" data-exercise-id="dips">
-          <div class="perf-name">Dips ou pompes sur machine</div>
+        <div class="perf-row" data-session="a" data-exercise-id="ecarte">
+          <div class="perf-name">Écarté poulie/machine</div>
           <div class="perf-fields">
-            <label>
-              <span>Meilleur poids</span>
-              <input type="number" min="0" step="2.5" value="25" data-field="best" />
-            </label>
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="25" data-field="best" /></label>
           </div>
           <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">25 kg</span></div>
-          <div class="small-note"></div>
-        </div>
-
-        <div class="perf-row" data-session="a" data-exercise-id="row">
-          <div class="perf-name">Rowing ou tirage horizontal</div>
-          <div class="perf-fields">
-            <label>
-              <span>Meilleur poids</span>
-              <input type="number" min="0" step="2.5" value="50" data-field="best" />
-            </label>
-          </div>
-          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">50 kg</span></div>
           <div class="small-note"></div>
         </div>
 
         <div class="perf-row" data-session="a" data-exercise-id="lateral">
           <div class="perf-name">Élévations latérales</div>
           <div class="perf-fields">
-            <label>
-              <span>Meilleur poids</span>
-              <input type="number" min="0" step="2.5" value="12.5" data-field="best" />
-            </label>
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="12.5" data-field="best" /></label>
           </div>
           <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">12.5 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="a" data-exercise-id="triceps">
+          <div class="perf-name">Extension triceps poulie</div>
+          <div class="perf-fields">
+            <label><span>Meilleur poids</span><input type="number" min="0" step="2.5" value="15" data-field="best" /></label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">15 kg</span></div>
           <div class="small-note"></div>
         </div>
       </div>
@@ -106,40 +91,41 @@
     </section>
 
     <section>
-      <h2>🏋️ Accès à la séance</h2>
+      <h2>🏋️ Séance détaillée</h2>
       <div class="exercise-list">
         <div class="exercise" data-session="a" data-exercise-id="bench">
-          <h3>1. Développé couché</h3>
-          <div class="sets">4 × 6–8</div>
-          <div class="tip">Charge lourde, technique propre. Descends doucement puis pousse avec contrôle.</div>
+          <h3>1. Développé couché machine</h3>
+          <div class="sets">4 × 8–10</div>
+          <div class="tip">Le mouvement principal pour la poitrine. Descends en contrôlant puis repousse sans arrondir le dos.</div>
           <div class="program-suggestion">Poids conseillé : 75 kg</div>
         </div>
 
-        <div class="exercise" data-session="a" data-exercise-id="incline">
-          <h3>2. Presse inclinée aux haltères</h3>
+        <div class="exercise" data-session="a" data-exercise-id="shoulders">
+          <h3>2. Développé épaules machine</h3>
           <div class="sets">3 × 8–10</div>
-          <div class="tip">Travaille la partie haute des pectoraux. Ne pas casser la position du dos.</div>
-          <div class="program-suggestion">Poids conseillé : 50 kg</div>
+          <div class="tip">Travaille la partie antérieure des épaules avec un angle guidé, très utile pour la force et l’aspect visuel.</div>
+          <div class="program-suggestion">Poids conseillé : 40 kg</div>
         </div>
 
-        <div class="exercise" data-session="a" data-exercise-id="dips">
-          <h3>3. Dips ou pompes sur machine</h3>
-          <div class="sets">3 × 8–12</div>
-          <div class="tip">Si le mouvement est trop difficile, réduis la difficulté ou utilise un aide.</div>
+        <div class="exercise" data-session="a" data-exercise-id="ecarte">
+          <h3>3. Écarté poulie/machine</h3>
+          <div class="sets">3 × 12–15</div>
+          <div class="tip">Cible la poitrine avec un bon étirement en fin de mouvement, idéal pour la qualité du stretch.</div>
           <div class="program-suggestion">Poids conseillé : 25 kg</div>
         </div>
 
-        <div class="exercise" data-session="a" data-exercise-id="row">
-          <h3>4. Rowing ou tirage horizontal</h3>
-          <div class="sets">3 × 8–10</div>
-          <div class="tip">Travail le dos et aide à l’équilibre musculaire par rapport au pressing.</div>
-          <div class="program-suggestion">Poids conseillé : 50 kg</div>
+        <div class="exercise" data-session="a" data-exercise-id="lateral">
+          <h3>4. Élévations latérales</h3>
+          <div class="sets">3 × 12–15</div>
+          <div class="tip">Fais des mouvements lents et contrôlés pour travailler les deltoïdes latéraux sans trop basculer le corps.</div>
+          <div class="program-suggestion">Poids conseillé : 12.5 kg</div>
         </div>
 
-        <div class="exercise" data-session="a" data-exercise-id="lateral">
-          <h3>5. Élévations latérales</h3>
+        <div class="exercise" data-session="a" data-exercise-id="triceps">
+          <h3>5. Extension triceps poulie</h3>
           <div class="sets">3 × 12–15</div>
-          <div class="program-suggestion">Poids conseillé : 12.5 kg</div>
+          <div class="tip">Termine la séance sur les triceps avec une tension constante, en gardant les coudes proches du corps.</div>
+          <div class="program-suggestion">Poids conseillé : 15 kg</div>
         </div>
       </div>
     </section>

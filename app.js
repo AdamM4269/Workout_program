@@ -4,36 +4,47 @@ const SESSION_KEY = 'muscu-program-last-session';
 
 const SESSION_DATA = {
   a: {
-    label: 'Séance A',
-    focus: 'Pectoraux + Triceps',
+    label: 'Haut A',
+    focus: 'Push focus',
     exercises: [
-      { id: 'bench', name: 'Développé couché', step: 2.5, best: 75 },
-      { id: 'incline', name: 'Presse inclinée aux haltères', step: 2.5, best: 50 },
-      { id: 'dips', name: 'Dips ou pompes sur machine', step: 2.5, best: 25 },
-      { id: 'row', name: 'Rowing ou tirage horizontal', step: 2.5, best: 50 },
-      { id: 'lateral', name: 'Élévations latérales', step: 2.5, best: 12.5 }
+      { id: 'bench', name: 'Développé couché machine', step: 2.5, best: 75 },
+      { id: 'shoulders', name: 'Développé épaules machine', step: 2.5, best: 40 },
+      { id: 'ecarte', name: 'Écarté poulie/machine', step: 2.5, best: 25 },
+      { id: 'lateral', name: 'Élévations latérales', step: 2.5, best: 12.5 },
+      { id: 'triceps', name: 'Extension triceps poulie', step: 2.5, best: 15 }
     ]
   },
   b: {
-    label: 'Séance B',
-    focus: 'Jambes',
+    label: 'Jambes A',
+    focus: 'Force + stabilité',
     exercises: [
-      { id: 'squat', name: 'Squat', step: 2.5, best: 90 },
-      { id: 'split', name: 'Fentes avec haltères', step: 2.5, best: 25 },
-      { id: 'press', name: 'Presse jambes', step: 5, best: 90 },
-      { id: 'curl', name: 'Leg curl', step: 2.5, best: 40 },
-      { id: 'calf', name: 'Mollets debout', step: 2.5, best: 40 }
+      { id: 'goblet', name: 'Goblet squat', step: 2.5, best: 18 },
+      { id: 'split_front', name: 'Fentes avant avec haltères', step: 2.5, best: 20 },
+      { id: 'rdl', name: 'RDL haltères', step: 2.5, best: 25 },
+      { id: 'calf_standing', name: 'Mollets debout (unijambiste)', step: 2.5, best: 15 },
+      { id: 'plank', name: 'Gainage (planche)', step: 2.5, best: 0 }
     ]
   },
   c: {
-    label: 'Séance C',
-    focus: 'Dos + Épaules + Biceps',
+    label: 'Haut B',
+    focus: 'Pull focus',
     exercises: [
-      { id: 'pull', name: 'Traction ou tirage vertical', step: 2.5, best: 70 },
-      { id: 'rowing', name: 'Rowing barre ou haltères', step: 2.5, best: 55 },
-      { id: 'military', name: 'Développé militaire', step: 2.5, best: 40 },
-      { id: 'biceps', name: 'Curl barre ou haltères', step: 2.5, best: 25 },
-      { id: 'abs', name: 'Abdominaux', step: 2.5, best: 12.5 }
+      { id: 'lat_pulldown', name: 'Tirage vertical (lat pulldown)', step: 2.5, best: 70 },
+      { id: 'seated_row', name: 'Rowing horizontal (seated row)', step: 2.5, best: 55 },
+      { id: 'chest_pulldown', name: 'Tirage poitrine machine', step: 2.5, best: 40 },
+      { id: 'curl_biceps', name: 'Curl biceps machine', step: 2.5, best: 25 },
+      { id: 'curl_hammer', name: 'Curl marteau poulie', step: 2.5, best: 18 }
+    ]
+  },
+  d: {
+    label: 'Jambes B',
+    focus: 'Fessiers + équilibre',
+    exercises: [
+      { id: 'bulgarian', name: 'Squat bulgare', step: 2.5, best: 18 },
+      { id: 'hip_thrust', name: 'Hip thrust avec haltère', step: 2.5, best: 30 },
+      { id: 'split_back', name: 'Fentes arrière avec haltères', step: 2.5, best: 18 },
+      { id: 'calf_seated', name: 'Mollets assis ou debout', step: 2.5, best: 15 },
+      { id: 'side_plank', name: 'Gainage latéral', step: 2.5, best: 0 }
     ]
   }
 };
