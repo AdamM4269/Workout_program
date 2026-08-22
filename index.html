@@ -9,6 +9,19 @@
 <body>
   <div class="container">
     <header class="page-header">
+      <div class="mobile-nav-wrap">
+        <button class="burger-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="quick-nav" aria-label="Navigation rapide">
+          <a href="seance-a.html">Haut A</a>
+          <a href="seance-b.html">Jambes A</a>
+          <a href="seance-c.html">Haut B</a>
+          <a href="seance-d.html">Jambes B</a>
+        </nav>
+      </div>
       <h1>💪 Mon nouveau programme</h1>
       <p class="subtitle">Haut du corps 3x/semaine en salle + jambes 2x/semaine à la maison.</p>
     </header>
@@ -41,7 +54,7 @@
     <section>
       <h2>🏋️ Haut du corps (3x/semaine en salle)</h2>
       <div class="program-grid">
-        <article class="plan-card">
+        <article class="plan-card" id="haut-a">
           <span class="tag tag-green">Haut A</span>
           <h3>Push focus</h3>
           <ul class="exercise-list-index">
@@ -71,7 +84,7 @@
           </div>
         </article>
 
-        <article class="plan-card">
+        <article class="plan-card" id="haut-b">
           <span class="tag tag-gold">Haut B</span>
           <h3>Pull focus</h3>
           <ul class="exercise-list-index">
@@ -106,7 +119,7 @@
     <section>
       <h2>🦵 Jambes (2x/semaine à la maison)</h2>
       <div class="program-grid two-columns">
-        <article class="plan-card">
+        <article class="plan-card" id="jambes-a">
           <span class="tag tag-blue">Jambes A</span>
           <h3>Force + stabilité</h3>
           <ul class="exercise-list-index">
@@ -136,7 +149,7 @@
           </div>
         </article>
 
-        <article class="plan-card">
+        <article class="plan-card" id="jambes-b">
           <span class="tag tag-purple">Jambes B</span>
           <h3>Fessiers + équilibre</h3>
           <ul class="exercise-list-index">
@@ -184,5 +197,7 @@
 
     <footer>Mon programme — version 2026</footer>
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

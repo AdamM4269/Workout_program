@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerBtn = document.querySelector('.burger-btn');
+  const navWrap = document.querySelector('.mobile-nav-wrap');
+  const navLinks = document.querySelectorAll('.quick-nav a');
+
+  if (burgerBtn && navWrap) {
+    burgerBtn.addEventListener('click', () => {
+      const isOpen = navWrap.classList.toggle('menu-open');
+      burgerBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navWrap) {
+        navWrap.classList.remove('menu-open');
+      }
+      if (burgerBtn) {
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  initializeSessionPage();
+});
+
 const STORAGE_KEY = 'muscu-program-performance';
 const MOOD_KEY = 'muscu-program-session-mood';
 const SESSION_KEY = 'muscu-program-last-session';
@@ -255,7 +281,3 @@ function initializeSessionPage() {
   renderSessionSettings(sessionKey);
   renderLastSessionSummary();
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  initializeSessionPage();
-});
