@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Séance A — Pectoraux + Triceps</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-session="a">
+  <div class="container">
+    <div class="topbar">
+      <a class="back-link" href="programme-musculation.html">← Accueil</a>
+      <div></div>
+    </div>
+
+    <header class="page-header">
+      <h1>🟢 Séance A — Pectoraux + Triceps</h1>
+      <p class="subtitle">Force, volume et contrôle technique sur les mouvements de base.</p>
+    </header>
+
+    <section>
+      <h2>📋 Objectif de la séance</h2>
+      <div class="session-meta">
+        <div class="meta-card"><strong>4</strong><span>Exercices principaux</span></div>
+        <div class="meta-card"><strong>3–4</strong><span>Sets par mouvement</span></div>
+        <div class="meta-card"><strong>6–12</strong><span>Répétitions ciblées</span></div>
+      </div>
+      <div class="info-box">Priorité à la qualité du mouvement et au maintien de la technique. Tu peux augmenter la charge seulement si le geste reste propre.</div>
+    </section>
+
+    <section id="parametrage">
+      <h2>⚙️ Paramétrage</h2>
+      <div class="mood-selector">
+        <strong>Ma forme :</strong>
+        <label><input type="radio" name="sessionMood" value="1">Très fatigué</label>
+        <label><input type="radio" name="sessionMood" value="2">Normal</label>
+        <label><input type="radio" name="sessionMood" value="3">Pleine forme</label>
+      </div>
+
+      <div class="exercise-list">
+        <div class="perf-row" data-session="a" data-exercise-id="bench">
+          <div class="perf-name">Développé couché</div>
+          <div class="perf-fields">
+            <label>
+              <span>Meilleur poids</span>
+              <input type="number" min="0" step="2.5" value="75" data-field="best" />
+            </label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">75 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="a" data-exercise-id="incline">
+          <div class="perf-name">Presse inclinée aux haltères</div>
+          <div class="perf-fields">
+            <label>
+              <span>Meilleur poids</span>
+              <input type="number" min="0" step="2.5" value="50" data-field="best" />
+            </label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">50 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="a" data-exercise-id="dips">
+          <div class="perf-name">Dips ou pompes sur machine</div>
+          <div class="perf-fields">
+            <label>
+              <span>Meilleur poids</span>
+              <input type="number" min="0" step="2.5" value="25" data-field="best" />
+            </label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">25 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="a" data-exercise-id="row">
+          <div class="perf-name">Rowing ou tirage horizontal</div>
+          <div class="perf-fields">
+            <label>
+              <span>Meilleur poids</span>
+              <input type="number" min="0" step="2.5" value="50" data-field="best" />
+            </label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">50 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+
+        <div class="perf-row" data-session="a" data-exercise-id="lateral">
+          <div class="perf-name">Élévations latérales</div>
+          <div class="perf-fields">
+            <label>
+              <span>Meilleur poids</span>
+              <input type="number" min="0" step="2.5" value="12.5" data-field="best" />
+            </label>
+          </div>
+          <div class="advice-box"><strong>Poids conseillé :</strong> <span class="suggestion-value">12.5 kg</span></div>
+          <div class="small-note"></div>
+        </div>
+      </div>
+
+      <div class="actions" style="margin-top: 18px;">
+        <button class="primary-btn" type="button" data-save-session>Valider ma séance</button>
+      </div>
+      <div id="sessionSummary" class="session-summary">Aucune séance validée pour le moment.</div>
+    </section>
+
+    <section>
+      <h2>🏋️ Accès à la séance</h2>
+      <div class="exercise-list">
+        <div class="exercise">
+          <h3>1. Développé couché</h3>
+          <div class="sets">4 × 6–8</div>
+          <div class="tip">Charge lourde, technique propre. Descends doucement puis pousse avec contrôle.</div>
+        </div>
+
+        <div class="exercise">
+          <h3>2. Presse inclinée aux haltères</h3>
+          <div class="sets">3 × 8–10</div>
+          <div class="tip">Travaille la partie haute des pectoraux. Ne pas casser la position du dos.</div>
+        </div>
+
+        <div class="exercise">
+          <h3>3. Dips ou pompes sur machine</h3>
+          <div class="sets">3 × 8–12</div>
+          <div class="tip">Si le mouvement est trop difficile, réduis la difficulté ou utilise un aide.</div>
+        </div>
+
+        <div class="exercise">
+          <h3>4. Rowing ou tirage horizontal</h3>
+          <div class="sets">3 × 8–10</div>
+          <div class="tip">Travail le dos et aide à l’équilibre musculaire par rapport au pressing.</div>
+        </div>
+
+        <div class="exercise">
+          <h3>5. Élévations latérales</h3>
+          <div class="sets">3 × 12–15</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
