@@ -8,25 +8,52 @@
 </head>
 <body>
   <div class="container">
-    <header class="page-header">
-      <div class="mobile-nav-wrap">
-        <button class="burger-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="quick-nav" aria-label="Navigation rapide">
-          <a href="seance-a.html">Haut A</a>
-          <a href="seance-b.html">Jambes A</a>
-          <a href="seance-c.html">Haut B</a>
-          <a href="seance-d.html">Jambes B</a>
-        </nav>
+    <div class="status-bar">
+      <span class="time">02:01</span>
+      <div class="status-icons" aria-hidden="true">
+        <span class="signal"></span>
+        <span class="wifi"></span>
+        <span class="battery"></span>
       </div>
-      <h1>💪 Mon nouveau programme</h1>
+    </div>
+
+    <header class="page-header">
+      <div class="mini-strip">
+        <span class="mini-square"></span>
+        <span>Haut A</span>
+        <span>Jambes A</span>
+        <span>Haut B</span>
+        <span>Jambes B</span>
+      </div>
+
+      <div class="hero-figure">
+        <span class="arm-icon">💪</span>
+        <h1>Mon nouveau</h1>
+      </div>
+      <h2 class="hero-subtitle">programme</h2>
       <p class="subtitle">Haut du corps 3x/semaine en salle + jambes 2x/semaine à la maison.</p>
     </header>
 
-    <section>
+    <section class="rotation-panel">
+      <h2 class="panel-title">Rotation des séances</h2>
+      <div class="rotation-list">
+        <div>Haut A <span>Push focus</span></div>
+        <div>Jambes A <span>Force + stabilité</span></div>
+        <div>Haut B <span>Pull focus</span></div>
+        <div>Jambes B <span>Fessiers + équilibre</span></div>
+      </div>
+      <div class="info-box info-iphone">
+        Rotation : A / B / A puis B / A / B la semaine suivante. Les séances H1/H2 de la semaine peuvent être alternées selon ton emploi du temps, mais garde la logique de rotation.
+      </div>
+    </section>
+
+    <div class="bottom-dock">
+      <button class="dock-btn back" type="button" aria-label="Retour">‹</button>
+      <button class="dock-btn home" type="button" aria-label="Accueil">⌂</button>
+      <button class="dock-btn menu" type="button" aria-label="Menu">⋯</button>
+    </div>
+
+    <section class="hidden-extra">
       <h2>📌 Rotation des séances</h2>
       <div class="summary-grid">
         <div class="summary-card accent-green">
@@ -51,7 +78,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="hidden-extra">
       <h2>🏋️ Haut du corps (3x/semaine en salle)</h2>
       <div class="program-grid">
         <article class="plan-card" id="haut-a">
@@ -116,7 +143,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="hidden-extra">
       <h2>🦵 Jambes (2x/semaine à la maison)</h2>
       <div class="program-grid two-columns">
         <article class="plan-card" id="jambes-a">
@@ -181,7 +208,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="hidden-extra">
       <h2>🗓️ Exemple de répartition sur la semaine</h2>
       <div class="week-grid">
         <div class="day-card"><strong>Lundi</strong><span>Haut A (salle)</span></div>
